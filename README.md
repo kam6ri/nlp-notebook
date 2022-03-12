@@ -36,3 +36,4 @@ download_mecab_ipadic_neologd
 # Download mecab-unidic-neologd
 download_mecab_unidic_neologd
 ```
+It is recommended that you run this script periodically, as the dictionary database to which you are downloading is updated frequently.
