@@ -1,4 +1,4 @@
-# nlp-notebook
+# :memo: nlp-notebook
 This is a Docker integrated environment for natural language processing
 
 ## How to use
