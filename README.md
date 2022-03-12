@@ -20,7 +20,19 @@ docker-compse up -d --build
 ```
 
 ### Use an interactive shell in container
-To run `bash` in the running container and connect it, use `exec` command.
+To run `bash` in the running `jupyter` container and connect it, use `exec` command.
 ```
-docker-compse exec <container_name> /bin/bash
+docker-compse exec jupyter /bin/bash
+```
+
+### Download additional dictionary for MeCab
+```
+# Connect to running jupyter container
+docker-compse exec jupyter /bin/bash
+
+# Download mecab-ipadic-neologd
+download_mecab_ipadic_neologd
+
+# Download mecab-unidic-neologd
+download_mecab_unidic_neologd
 ```
