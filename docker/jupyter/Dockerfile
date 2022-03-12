@@ -30,6 +30,7 @@ RUN apt-get update && \
     patch \
     file \
     unzip \
+    sudo \
     mecab \
     libmecab-dev \
     mecab-ipadic \
