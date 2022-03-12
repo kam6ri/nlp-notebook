@@ -1,0 +1,5 @@
+#!/bin/bash
+git clone --depth 1 https://github.com/neologd/mecab-unidic-neologd.git /tmp/mecab-unidic-neologd
+cd /tmp/mecab-unidic-neologd
+./bin/install-mecab-unidic-neologd -n -y -p /var/lib/mecab/dic/unidic-neologd
+rm -rf /tmp/*
