@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: ./docker/jupyter/Dockerfile
+    command: jupyter lab --ip 0.0.0.0 --no-browser --allow-root --NotebookApp.token=''
+    container_name: jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/home/jovyan/work

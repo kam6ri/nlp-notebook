@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "nlp-notebook"
+version = "0.1.0"
+description = "This is a Docker integrated environment for natural language processing"
+authors = ["Gen Ueshima <uesmgn@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.6"
+jupyter = "^1.0.0"
+jupyterlab = "^3.3.1"
+pandas = "^1.4.1"
+tqdm = "^4.63.0"
+cookiecutter = "^1.7.3"
+psycopg2-binary = "^2.9.3"
+pyarrow = "^7.0.0"
+Janome = "^0.4.2"
+nltk = "^3.7"
+mecab-python3 = "^1.0.5"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
